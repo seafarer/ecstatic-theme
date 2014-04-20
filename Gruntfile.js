@@ -3,11 +3,11 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             sass: {
-                files: ['sass/**/*.{scss,sass}'],
+                files: ['sass/**/*.{scss,sass}' ],
                 tasks: ['sass:dist']
             },
             livereload: {
-                files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css','images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+                files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css', 'images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
                 options: {
                     livereload: true
                 }
@@ -15,6 +15,9 @@ module.exports = function(grunt) {
         },
         sass: {
             dist: {
+                options: {
+                    outputStyle: 'expanded'
+                },
                 files: {
                     'css/ecstatic.css': 'sass/ecstatic.scss'
                 }

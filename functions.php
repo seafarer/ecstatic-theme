@@ -67,7 +67,7 @@ add_action( 'widgets_init', 'ecstatic_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ecstatic_scripts() {
-  wp_enqueue_style( 'ecstatic-style', get_template_directory_uri() . '/css/ecstatic.css' );
+  //wp_enqueue_style( 'ecstatic-style', get_template_directory_uri() . '/css/ecstatic.css' );
 
   if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
   function my_jquery_enqueue() {

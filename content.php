@@ -58,6 +58,5 @@
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'ecstatic' ), __( '1 Comment', 'ecstatic' ), __( '% Comments', 'ecstatic' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'ecstatic' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
