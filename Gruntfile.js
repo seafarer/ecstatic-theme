@@ -19,7 +19,7 @@ module.exports = function(grunt) {
                     outputStyle: 'expanded'
                 },
                 files: {
-                    'css/ecstatic.css': 'sass/ecstatic.scss'
+                    'css/bmi.css': 'sass/bmi.scss'
                 }
             }
         }

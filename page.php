@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package ecstatic
+ * @package bmi
  */
 
 get_header(); ?>

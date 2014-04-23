@@ -2,7 +2,7 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package ecstatic
+ * @package bmi
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
@@ -13,14 +13,14 @@
 			</aside>
 
 			<aside id="archives" class="widget">
-				<h1 class="widget-title"><?php _e( 'Archives', 'ecstatic' ); ?></h1>
+				<h1 class="widget-title"><?php _e( 'Archives', 'bmi' ); ?></h1>
 				<ul>
 					<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 				</ul>
 			</aside>
 
 			<aside id="meta" class="widget">
-				<h1 class="widget-title"><?php _e( 'Meta', 'ecstatic' ); ?></h1>
+				<h1 class="widget-title"><?php _e( 'Meta', 'bmi' ); ?></h1>
 				<ul>
 					<?php wp_register(); ?>
 					<li><?php wp_loginout(); ?></li>

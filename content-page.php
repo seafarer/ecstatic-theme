@@ -2,7 +2,7 @@
 /**
  * The template used for displaying page content in page.php
  *
- * @package ecstatic
+ * @package bmi
  */
 ?>
 
@@ -15,7 +15,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'ecstatic' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'bmi' ),
 				'after'  => '</div>',
 			) );
 		?>

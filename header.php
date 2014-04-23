@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package ecstatic
+ * @package bmi
  */
 ?><!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
@@ -14,7 +14,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php wp_title( '|', true, 'right' ); ?></title>
-  <link rel="stylesheet" href="/site/wp-content/themes/ecstatic/css/ecstatic.css?ver=3.9" type='text/css' media='all' />
+  <link rel="stylesheet" href="/site/wp-content/themes/bmi/css/bmi.css?ver=3.9" type='text/css' media='all' />
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -34,7 +34,7 @@
     </header><!-- #masthead -->
 
     <nav id="site-navigation" class="main-navigation" role="navigation">
-      <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'ecstatic' ); ?></a>
+      <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'bmi' ); ?></a>
       <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
       <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
     </nav><!-- #site-navigation -->
