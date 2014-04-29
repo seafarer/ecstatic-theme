@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package bmi
+ * @package ecstatic
  */
 
 get_header(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 
-			<?php bmi_post_nav(); ?>
+			<?php ecstatic_post_nav(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template

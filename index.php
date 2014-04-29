@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package bmi
+ * @package ecstatic
  */
 
 get_header(); ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php bmi_paging_nav(); ?>
+			<?php ecstatic_paging_nav(); ?>
 
 		<?php else : ?>
 

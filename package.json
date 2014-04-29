@@ -1,9 +1,9 @@
 {
-  "name": "bmisc",
+  "name": "ecstatic",
     "version": "0.0.1",
     "devDependencies": {
         "grunt": "0.4.1",
         "grunt-contrib-watch": "0.4.3",
-        "grunt-sass": "0.6.1"
+        "grunt-sass": "0.12.1"
     }
 }
