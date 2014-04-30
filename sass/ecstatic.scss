@@ -18,6 +18,19 @@
 @import "wordpress";
 @import "menus";
 
+#test {
+  opacity: .5;
+  transition: opacity 300ms ease;
+}
+
+#test:hover {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+#more {
+
+}
 
 #page {
   position: relative;
