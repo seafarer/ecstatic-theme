@@ -46,10 +46,37 @@
   width: 100%;
   background: #333;
   display: block;
-  padding: 15px;
+  padding: em(8) em(12) em(15);
 }
 
-@media screen and (min-width: 45.0625em) {
+.close-btn {
+  position: absolute;
+  top: em(6);
+  left: em(10);
+}
+
+.close-btn,
+.nav-btn {
+  color: #fff;
+
+  &:hover {
+    color: darken(#fff, 15%);
+  }
+
+  span {
+    color: #fff;
+    @include fontSize(26px);
+    position: relative;
+    top: 6px;
+    display: inline-block;
+  }
+}
+
+@include respond-to($large-up) {
+
+  .menu {
+    @include outer-container();
+  }
 
   .nav-btn {
     @include visuallyhidden;
@@ -112,7 +139,7 @@
   }
 }
 
-@media screen and (max-width: 45em) {
+@include respond-to($large)  {
 
   #site-navigation {
     position: absolute;
@@ -126,12 +153,6 @@
 
     &:target .close-btn {
       display: block;
-    }
-
-    .close-btn {
-      position: absolute;
-      top: 1em;
-      left: 1.875em;
     }
 
     .menu-top-nav-container {
