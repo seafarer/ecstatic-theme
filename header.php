@@ -24,7 +24,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
   <div class="inner-page">
-    <a class="nav-btn" id="nav-open-btn" href="#nav">Menu</a>
+    <a class="nav-btn" id="nav-open-btn" href="#nav"><span class="icon-list2"></span> Menu</a>
 
     <header id="masthead" class="site-header block" role="banner">
       <div class="site-branding">
@@ -35,8 +35,8 @@
 
     <nav id="site-navigation" class="main-navigation" role="navigation">
       <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'ecstatic' ); ?></a>
-      <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
-      <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+      <a class="close-btn" id="nav-close-btn" href="#top"><span class="icon-cross3"></span> Return to Content</a>
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'main-menu', ) ); ?>
     </nav><!-- #site-navigation -->
 
     <div id="content" class="site-content block">
