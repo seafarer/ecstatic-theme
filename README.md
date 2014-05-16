@@ -19,12 +19,12 @@ There are also folders for Bourbon and Neat, which should be left alone. Bourbon
 
 For more info in the libraries and tools included with this build:
 
-[Bourbon](http://bourbon.io) — A bunch of handy mixins
-[Neat](http://neat.bourbon.io) — A super simple grid system that uses Bourbon
-[SCSS version of Normalize](https://github.com/kristerkari/normalize.scss/blob/master/_normalize.scss) based on [Normalize](http://necolas.github.io/normalize.css/) — unifies defaults across browsers. The file included here strips out everything having to do with legacy IE and font sizes.
-[Modernizr](http://modernizr.com) — A stripped down custom build: (backgroundsize, flexbox, opacity, csstransforms, csstransforms3d, csstransitions, inlinesvg, svg, touch, shiv, mq, cssclasses, prefixed, teststyles, testprop, testallprops, prefixes, domprefixes, load)
-[Libsass](http://libsass.org/) — C implentation of Sass. Wicked fast.
-[Livereload](https://github.com/gruntjs/grunt-contrib-watch)
-[Autoprefixer](https://github.com/ai/autoprefixer) — Prefix your css rules.
-[Entypo](http://www.entypo.com/) — Nice set of Icons. 
+* [Bourbon](http://bourbon.io) — A bunch of handy mixins
+* [Neat](http://neat.bourbon.io) — A super simple grid system that uses Bourbon
+* [SCSS version of Normalize](https://github.com/kristerkari/normalize.scss/blob/master/_normalize.scss) based on [Normalize](http://necolas.github.io/normalize.css/) — unifies defaults across browsers. The file included here strips out everything having to do with legacy IE and font sizes.
+* [Modernizr](http://modernizr.com) — A stripped down custom build: (backgroundsize, flexbox, opacity, csstransforms, csstransforms3d, csstransitions, inlinesvg, svg, touch, shiv, mq, cssclasses, prefixed, teststyles, testprop, testallprops, prefixes, domprefixes, load)
+* [Libsass](http://libsass.org/) — C implentation of Sass. Wicked fast.
+* [Livereload](https://github.com/gruntjs/grunt-contrib-watch)
+* [Autoprefixer](https://github.com/ai/autoprefixer) — Prefix your css rules.
+* [Entypo](http://www.entypo.com/) — Nice set of Icons. 
 
