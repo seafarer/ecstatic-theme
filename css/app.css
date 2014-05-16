@@ -1420,9 +1420,36 @@ embed, iframe, object {
   width: 100%;
   background: #333;
   display: block;
-  padding: 15px; }
+  padding: 0.5em 0.75em 0.9375em; }
 
-@media screen and (min-width: 45.0625em) {
+.close-btn {
+  position: absolute;
+  top: 0.375em;
+  left: 0.625em; }
+
+.close-btn, .nav-btn {
+  color: #fff; }
+  .close-btn:hover, .nav-btn:hover {
+    color: #d9d9d9; }
+  .close-btn span, .nav-btn span {
+    color: #fff;
+    font-size: 26px;
+    font-size: 1.625rem;
+    position: relative;
+    top: 6px;
+    display: inline-block; }
+
+@media only screen and (min-width: 861px) {
+  .menu {
+    *zoom: 1;
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto; }
+    .menu:before, .menu:after {
+      content: " ";
+      display: table; }
+    .menu:after {
+      clear: both; }
   .nav-btn {
     border: 0;
     clip: rect(0 0 0 0);
@@ -1469,7 +1496,7 @@ embed, iframe, object {
   .main-navigation ul li:hover > ul {
     display: block; } }
 
-@media screen and (max-width: 45em) {
+@media only screen and (max-width: 860px) {
   #site-navigation {
     position: absolute;
     top: 0;
@@ -1479,10 +1506,6 @@ embed, iframe, object {
       height: 0; }
     #site-navigation:target .close-btn {
       display: block; }
-    #site-navigation .close-btn {
-      position: absolute;
-      top: 1em;
-      left: 1.875em; }
     #site-navigation .menu-top-nav-container {
       position: relative;
       padding: 0; }
