@@ -1,0 +1,38 @@
+#page {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.inner-page {
+  position: relative;
+  width: 100%;
+}
+
+#masthead {
+  z-index: 100;
+  position: relative;
+}
+
+.block,
+.menu-top-nav-container {
+  @include outer-container;
+  @include pad(0 em(15));
+}
+
+#site-navigation {
+  @include row;
+}
+
+#content {
+  @include row;
+  margin-top: 25px;
+}
+
+#primary {
+  @include span-columns(9);
+}
+
+#secondary {
+  @include span-columns(3);
+}

@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             },
             autoprefixer: {
                 // When this file changes
-                files: ['css/ecstatic.css'],
+                files: ['css/app.css'],
                 // Run this task
                 tasks: ['autoprefixer']
             },
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
                     outputStyle: 'expanded'
                 },
                 files: {
-                    'css/ecstatic.css': 'sass/ecstatic.scss'
+                    'css/app.css': 'sass/app.scss'
                 }
             }
         },
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             dist: {
                 // prefix the specified file
                 files: {
-                    'css/ecstatic.css' : 'css/ecstatic.css'
+                    'css/app.css' : 'css/app.css'
                 }
             }
         }

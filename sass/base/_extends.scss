@@ -1,0 +1,21 @@
+%button {
+  padding: em(8) em(16);
+  background: $base-accent-color;
+  @include background(linear-gradient(tint($base-accent-color, 10%), $base-accent-color));
+  box-shadow: 0 1px 2px rgba(#fff, 0.1) inset;
+  -webkit-font-smoothing: antialiased;
+  font-size: $base-font-size;
+  font-weight: bold;
+  line-height: 1em;
+  border-radius: 2px;
+  border: 1px solid darken($base-accent-color, 2%);
+  color: #fff;
+  text-shadow: -1px -1px 1px rgba(black, 0.1);
+  text-transform: uppercase;
+
+
+  &:hover {
+    @include background(linear-gradient($base-accent-color, shade($base-accent-color, 10%)));
+    box-shadow: 0 1px 2px rgba(#fff, 0.1) inset;
+  }
+}

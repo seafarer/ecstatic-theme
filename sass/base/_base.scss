@@ -6,11 +6,15 @@
 
 // Bitters
 ///////////////////////////////////////////////////////////////////////////////
+@import "normalize";
 @import "variables";
-@import "extends/base";
-@import "mixins/base";
+@import "extends";
+@import "mixins";
+@import "icons";
 @import "typography";
 @import "forms";
 @import "tables";
 @import "lists";
 @import "flashes";
+@import "wordpress";
+
