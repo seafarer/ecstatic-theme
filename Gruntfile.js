@@ -1,28 +1,10 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        watch: {
-            sass: {
-                files: ['sass/**/*.{scss,sass}' ],
-                tasks: ['sass:dist']
-            },
-            autoprefixer: {
-                // When this file changes
-                files: ['css/app.css'],
-                // Run this task
-                tasks: ['autoprefixer']
-            },
-            livereload: {
-                files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css', 'images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
-                options: {
-                    livereload: true
-                }
-            }
-        },
         sass: {
             dist: {
                 options: {
-                    outputStyle: 'expanded'
+                    outputStyle: 'compact'
                 },
                 files: {
                     'css/app.css': 'sass/app.scss'
@@ -39,6 +21,18 @@ module.exports = function(grunt) {
                 // prefix the specified file
                 files: {
                     'css/app.css' : 'css/app.css'
+                }
+            }
+        },
+        watch: {
+            sass: {
+                files: ['sass/**/*.{scss,sass}' ],
+                tasks: ['sass:dist', 'autoprefixer']
+            },
+            livereload: {
+                files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css', 'images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+                options: {
+                    livereload: true
                 }
             }
         }
